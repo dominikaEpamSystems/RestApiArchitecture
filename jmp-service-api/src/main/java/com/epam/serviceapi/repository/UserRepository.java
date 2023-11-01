@@ -1,6 +1,6 @@
-package com.epam.cloudservice.repo;
+package com.epam.serviceapi.repository;
 
-import com.epam.dto.User;
+import com.epam.dto.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

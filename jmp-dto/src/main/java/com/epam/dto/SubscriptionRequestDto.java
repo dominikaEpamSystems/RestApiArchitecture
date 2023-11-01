@@ -7,6 +7,11 @@ public class SubscriptionRequestDto {
     public SubscriptionRequestDto() {
     }
 
+    public SubscriptionRequestDto(Long id, Long userId) {
+        this.id = id;
+        this.userId = userId;
+    }
+
     public Long getId() {
         return id;
     }

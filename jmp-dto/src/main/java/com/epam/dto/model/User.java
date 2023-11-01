@@ -1,14 +1,33 @@
-package com.epam.dto;
+package com.epam.dto.model;
+
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "users")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "surname")
     private String surname;
+
+    @Column(name = "birth_date")
     private LocalDate birthday;
 
     public User() {
+    }
+
+    public User(Long id, String name, String surname, LocalDate birthday) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.birthday = birthday;
     }
 
     public Long getId() {

@@ -9,6 +9,13 @@ public class UserResponseDto {
     public UserResponseDto() {
     }
 
+    public UserResponseDto(Long id, String name, String surname, String birthday) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.birthday = birthday;
+    }
+
     public Long getId() {
         return id;
     }
